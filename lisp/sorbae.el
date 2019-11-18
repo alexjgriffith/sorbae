@@ -34,7 +34,7 @@
     ("Sorbae Passion Fruit Aloe"  "Passion Fruit Aloe" PF)
     ("Sorbae Grapefruit Watermelon" "Grapefruit Watermelon" GW)
     ("Sorbae Pomegranate Orange" "Pomegranate Orange" PO)
-    ("Sorbae Raspberry Jackfruit" "Raspberry Jackfruit" "RJ")
+    ("Sorbae Raspberry Jackfruit" "Raspberry Jackfruit" JF)
     ("Sorbae Strawberry Guava" "Strawberry Guava" SG)
     ("Sorbae Watermelon Honeydew" "Watermelon Honeydew" WH)
     ("Sorbae Pineapple Guava" "Pineapple Guava" PG)
@@ -49,7 +49,7 @@
     ("Sorbae Salts Passionfruit Aloe" "Salts Passionfruit Aloe" SPF )
     ("Sorbae Salts Peach Apricot" "Salts Peach Apricot" SPA)
     ("Sorbae Salts Pomegrenate Orange" "Salts Pomegrenate Orange" SPO )
-    ("Sorbae Salts Raspberry Jackfruit" "Salts Raspberry Jackfruit" SPJ)
+    ("Sorbae Salts Raspberry Jackfruit" "Salts Raspberry Jackfruit" SJF)
     ("Sorbae Salts Raspberry Sour Apple" "Salts Raspberry Sour Apple" SSA))
   "List of current Sorbae branded flavours.")
 

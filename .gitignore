@@ -9,3 +9,5 @@
 stubfile.plstore
 *~
 dist/
+
+data/
