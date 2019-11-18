@@ -14,7 +14,10 @@ Then, require it and go.
 
 Once the ~sorbae~ library has been loaded you can use the ~sorbae-mwtm~  and ~sorbae-insert-multi~ to render brand codes to brand names.
 
-Open ~*scratch*~ and execute the following:
+
+The following is an example of how to use Sorbae.
+
+Open ~*scratch*~ and insert the following. Each ~sorbae-mwtm~ will make a table for a single seizure form. ~sorbae-insert-mulit~ concatenates all seizure tables and inserts it in the current buffer at your current ~(point)~.
 
 #+BEGIN_SRC emacs-lisp
 (sorbae-insert-multi
@@ -31,5 +34,51 @@ Open ~*scratch*~ and execute the following:
     GW 1 GW 1 GW 1 PF 1 PF 1))
 #+END_SRC
 
+Navigate to the end of the inserted data and execute it using `C-M-x`. The table below should be inserted at ~(point)~. You can go ahead and insert this ~csv~ data into excel.
 
+#+BEGIN_SRC csv
+Inspector A,Estamlishment 1,Region 0,2019-10-1,Sorbae Grapefruit Watermelon, 3
+,,,,Sorbae Raspberry Sour Apple, 2
+,,,,Sorbae Strawberry Guava, 5
+,,,,Sorbae Strawberry Guava, 5
+,,,,Sorbae Raspberry Sour Apple, 3
+,,,,Sorbae Grapefruit Watermelon, 4
+Inspector B,Establishment 2,Region 0,2019-11-1,Sorbae Raspberry Sour Apple, 1
+Inspector C,Establishment 3,Region 0,2019-11-01,Sorbae Pineapple Guava, 1
+,,,,Sorbae Pineapple Guava, 1
+,,,,Sorbae Strawberry Guava, 2
+,,,,Sorbae Strawberry Guava, 2
+,,,,Sorbae Strawberry Guava, 1
+,,,,Sorbae Raspberry Sour Apple, 2
+,,,,Sorbae Peach Apricot, 1
+,,,,Sorbae Blueberry Kiwi, 1
+,,,,Sorbae Blueberry Kiwi, 2
+,,,,Sorbae Blueberry Kiwi, 1
+,,,,Sorbae Apple Berry, 1
+,,,,Sorbae Apple Berry, 2
+,,,,Sorbae Mango Lychee, 1
+,,,,Sorbae Mango Lychee, 1
+,,,,Sorbae Mango Lychee, 1
+,,,,Sorbae Mango Lychee, 2
+,,,,Sorbae Mango Lychee, 1
+,,,,Sorbae Peach Apricot, 2
+,,,,Sorbae Raspberry Sour Apple, 1
+,,,,Sorbae Raspberry Sour Apple, 2
+,,,,Sorbae Blueberry Kiwi, 1
+,,,,Sorbae Blueberry Kiwi, 1
+,,,,Sorbae Blueberry Kiwi, 2
+,,,,Sorbae Strawberry Guava, 2
+,,,,Sorbae Strawberry Guava, 2
+,,,,Sorbae Pomegranate Orange, 1
+,,,,Sorbae Pomegranate Orange, 2
+,,,,Sorbae Pomegranate Orange, 1
+,,,,Sorbae Grapefruit Watermelon, 1
+,,,,Sorbae Grapefruit Watermelon, 1
+,,,,Sorbae Grapefruit Watermelon, 1
+,,,,Sorbae Passion Fruit Aloe, 1
+,,,,Sorbae Passion Fruit Aloe, 1
+#+END_SRC
 
+** Future
+- [ ] Better ~csv~ formating. Right now strings are not encompased by ~""~.
+- [ ] Convert this to an excel macro. 

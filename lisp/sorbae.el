@@ -1,4 +1,4 @@
-k;;; sorbae.el --- Data Entry Assistance for Compliance Advisory  -*- lexical-binding: t -*-
+;;; sorbae.el --- Data Entry Assistance for Compliance Advisory  -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2019 Alexander Griffith
 ;; Author: Alexander Griffith <griffitaj@gmail.com>
