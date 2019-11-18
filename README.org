@@ -1,0 +1,35 @@
+* Sorbae
+
+** Installation
+
+Clone this repository and add the lisp directory to your load path.
+Then, require it and go.
+
+#+BEGIN_SRC emacs-lisp
+    (add-to-list 'load-path "/path/to/sorbae/lisp")
+    (require 'sorbae)
+#+END_SRC
+
+** Usage
+
+Once the ~sorbae~ library has been loaded you can use the ~sorbae-mwtm~  and ~sorbae-insert-multi~ to render brand codes to brand names.
+
+Open ~*scratch*~ and execute the following:
+
+#+BEGIN_SRC emacs-lisp
+(sorbae-insert-multi
+  (sorbae-mwtm
+    "Inspector A" "Estamlishment 1" "Region 0" "2019-10-1"
+    GW 3 SA 2 SG 5 SG 5 SA 3 GW 4)
+  (sorbae-mwtm
+    "Inspector B" "Establishment 2" "Region 0" "2019-11-1"
+    SA 1)
+  (sorbae-mwtm
+    "Inspector C" "Establishment 3" "Region 0" "2019-11-01"
+    PG 1 PG 1 SG 2 SG 2 SG 1 SA 2 PA 1 BK 1 BK 2 BK 1 AB 1 AB 2 ML 1 ML 1
+    ML 1 ML 2 ML 1 PA 2 SA 1 SA 2 BK 1 BK 1 BK 2 SG 2 SG 2 PO 1 PO 2 PO 1
+    GW 1 GW 1 GW 1 PF 1 PF 1))
+#+END_SRC
+
+
+
